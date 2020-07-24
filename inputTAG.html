@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>input</title>
+	<meta name="viewport" content="width=device-width, initial scale=1">
+<style>
+body{   
+       background-image: url("C:/users/shivamtiwari/webpages/images/sea.jpg"),linear-gradient(to bottom right,yellow,skyblue,green);
+       background-size: cover;
+       background-repeat: no-repeat;
+       background-attachment: fixed;
+       background-blend-mode:multiply; 
+    }
+
+ dialog{   
+        border-radius: 10% 30%;
+        background-image:radial-gradient(circle at center, yellow 40%,transparent,blue),linear-gradient(rgba(100,200,50,0.7),rgba(100,150,200,0.2));
+        background-blend-mode: multiply;
+       }
+
+ form{   
+       margin:60px auto 50px auto;
+       padding:50px;
+       overflow: auto;
+       background-image:linear-gradient(to top right, rgba(255,0,100,0.9),rgba(0,100,200,0.9));
+       width:400px;
+       height:auto;
+     }
+
+ fieldset{   
+           padding:30px;
+         }  
+
+ footer{   
+         text-align:center;
+         font:20px/1 Arial;
+         background-image: linear-gradient(to top right, blue,green 70%);
+         padding:20px 0;
+         width:100%; height:auto;
+       }
+
+ footer a{   
+           text-decoration:none;
+           color:white;
+         }     
+
+ header {
+ 	      background-image:linear-gradient(to bottom ,red,transparent);
+ 	      width:100%;height:auto;
+ 	      padding:30px 0;
+ 	      text-align:center;  
+ 	      margin-bottom: 10px;
+ 	      border-radius:50px 50px 0 0;
+        } 
+
+/*--------------------------------media----------------------------------*/
+
+@media(max-width:500px)
+       {  
+         
+          form{width:300px;}  
+ 
+      }
+
+@media(max-width: 411px)
+     {
+     	form{width:280px;
+            }
+        fieldset{padding:30px 10px;}    
+     	    
+     }  
+
+@media(max-width: 380px)
+{
+	form{width:240px;padding:50px 50px 50px 10px;}
+	fieldset{padding:20px 10px;}  
+}         
+
+</style>
+</head>
+
+<body id="top">
+	   
+       <header>
+       	<h1><span style="color:lightgreen;">@Web</span><span style="color:cyan;">Designing.Com</span></h1>
+       </header>
+
+	   <dialog open> <b>Welcome</b> </dialog> <br>
+
+    <form>
+
+    <fieldset>
+    <legend> Personal Info </legend>
+    <div class="Personal">	
+    First Name: <input type="text" name="fname" required placeholder="required" > <br><br>
+    Last Name: <input type="text" name="lname" required placeholder="required"><br><br>
+    Gender: Male <input type="radio" name="gender" required> Female <input type="radio" name="gender" required > Others <input type="radio" name="gender" required ><br><br>
+    Languages known: Hindi <input type="checkbox" name="lang" checked> English<input type="checkbox" name="lang"> Others <input type="checkbox" name="lang"><br>
+    Please specify(if other languages are known):<br> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp <input type="text" name="otherlang" placeholder="write nil (if not)"><br><br>
+    email ID: <input type="email" name="email" required placeholder="required"><br><br>
+    Mobile No.:<input type="tel" name="mob" required placeholder="required"><br><br>
+    Date of Birth: <input type="date" name="dob" required placeholder="required">
+    </div>
+    </fieldset><br>
+<hr><br>
+    <fieldset>
+    <legend> Educational Qualifications</legend> 	
+    Course:  <input  list="courses" required >
+            <datalist id="courses">
+            	<option value="BE/BTech (CSE)">
+            	<option value="BSc">
+            	<option value="BA">
+            	<option value="Diploma">
+            	<option value="ITI">
+                <option value="BCom">
+                <option value="BCA">		
+            </datalist>	<br><br>
+    Skills:<br>
+    <p style="text-align:justify-all;"> HTML<input type="checkbox" name="skills"> CSS<input type="checkbox" name="skills"><br> java<input type="checkbox" name="skills"> .NET<input type="checkbox" name="skills"><br> javascript<input type="checkbox" name="skills"> PHP<input type="checkbox" name="skills"><br> C++<input type="checkbox" name="skills"> Python<input type="checkbox" name="skills"><br> Matlab<input type="checkbox" name="skills"> </p>
+    
+    Upload Resume (pdf file): <input type="file" accept=".pdf" name="resume" required ><br><br>
+    Upload Photo (jpeg file): <input type="file" accept=".jpg,.png" name="photo" required ><br><br>
+    Enter any Portfolios: <input type="url" name="Portfolios" placeholder="Linkedin / github..."><br><br>
+    Passing Year: <input type="month" name="passyear" required ><br><br>
+    Experience (2-6 yrs.): <input type="number" name="exp" required max="6" min="2" value="2"> (years)<br><br>
+    Date and time of<br>  
+    filling in this form: <input type="datetime-local" name="formfillingdate">
+    </fieldset><br>
+
+    I agree, all details provided by me are true to best of my knowledge. Any descripancies will result in failure of my candidature: <input type="checkbox" name="agree" required> <input type="image" src="C:/users/shivamtiwari/webpages/images/check.png" width="50px" height="50px" style="float: right;" title="Click to Submit" onclick="(alert('Registration Successful'))">
+
+    </form>
+
+     <p style="text-align:right;color:white;"> -Created by shiVam <br> (by HTML & CSS)</p>
+
+    <footer>
+     Contact Us: <a href="mailto:st3737888@gmail.com?subject=Reaching%20Out&body=Thank%20and%20Regards" title="Click here to contact developer" onclick="(alert('Reaching out to Developer...'))"> e-mail</a><br>
+     <p> &copy All Rights Reserved.</p>
+     <a href="#top" title="Click to reach at top">Back to Top</a><br>
+    </footer>
+
+</body>
+</html>
+
+
+
+
